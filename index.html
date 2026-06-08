@@ -8,7 +8,7 @@
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), 
-                url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+                url('background.png') no-repeat center center fixed;
     background-blend-mode: overlay;
     background-size: cover;
     min-height: 100vh;
@@ -388,25 +388,25 @@ const correctProductsByCategory = {
 
 const allFoods = [
   // Правильные продукты (12 штук)
-  { name: 'Овощи', emoji: '🥗', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400', desc: 'Свежие овощи — источник витаминов и клетчатки', harmful: false },
-  { name: 'Овощи', emoji: '🥗', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400', desc: 'Свежие овощи — источник витаминов и клетчатки', harmful: false },
-  { name: 'Овощи', emoji: '🥗', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400', desc: 'Свежие овощи — источник витаминов и клетчатки', harmful: false },
-  { name: 'Яйца', emoji: '🥚', image: 'https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=400', desc: 'Белок высшего качества и полезные жиры', harmful: false },
-  { name: 'Каша', emoji: '🥣', image: 'https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=400', desc: 'Овсяная каша — медленные углеводы для энергии', harmful: false },
-  { name: 'Шоколад', emoji: '🍫', image: 'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400', desc: 'Горький шоколад — удовольствие с пользой', harmful: false },
-  { name: 'Курица', emoji: '🍗', image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400', desc: 'Куриное мясо — постный белок', harmful: false },
-  { name: 'Бобовые', emoji: '🫘', image: 'https://images.unsplash.com/photo-1589894117408-6b8915a89915?w=400', desc: 'Фасоль и чечевица — растительный белок', harmful: false },
-  { name: 'Яблоко', emoji: '🍎', image: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400', desc: 'Свежее яблоко — витамины и клетчатка', harmful: false },
-  { name: 'Рыба', emoji: '🐟', image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400', desc: 'Рыба — омега-3 и качественный белок', harmful: false },
-  { name: 'Картофель', emoji: '🥔', image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400', desc: 'Картофель — источник энергии и калия', harmful: false },
-  { name: 'Апельсин', emoji: '🍊', image: 'https://images.unsplash.com/photo-1547514701-427821047c98?w=400', desc: 'Апельсин — витамин С и антиоксиданты', harmful: false },
+  { name: 'Овощи', emoji: '🥗', image: 'vegetables.png', desc: 'Свежие овощи — источник витаминов и клетчатки', harmful: false },
+  { name: 'Овощи', emoji: '🥗', image: 'vegetables.png', desc: 'Свежие овощи — источник витаминов и клетчатки', harmful: false },
+  { name: 'Овощи', emoji: '🥗', image: 'vegetables.png', desc: 'Свежие овощи — источник витаминов и клетчатки', harmful: false },
+  { name: 'Яйца', emoji: '🥚', image: 'eggs.png', desc: 'Белок высшего качества и полезные жиры', harmful: false },
+  { name: 'Каша', emoji: '🥣', image: 'porridge.png', desc: 'Овсяная каша — медленные углеводы для энергии', harmful: false },
+  { name: 'Шоколад', emoji: '🍫', image: 'chocolate.png', desc: 'Горький шоколад — удовольствие с пользой', harmful: false },
+  { name: 'Курица', emoji: '🍗', image: 'chicken.png', desc: 'Куриное мясо — постный белок', harmful: false },
+  { name: 'Бобовые', emoji: '🫘', image: 'beans.png', desc: 'Фасоль и чечевица — растительный белок', harmful: false },
+  { name: 'Яблоко', emoji: '🍎', image: 'apple.png', desc: 'Свежее яблоко — витамины и клетчатка', harmful: false },
+  { name: 'Рыба', emoji: '🐟', image: 'fish.png', desc: 'Рыба — омега-3 и качественный белок', harmful: false },
+  { name: 'Картофель', emoji: '🥔', image: 'potato.png', desc: 'Картофель — источник энергии и калия', harmful: false },
+  { name: 'Апельсин', emoji: '🍊', image: 'orange.png', desc: 'Апельсин — витамин С и антиоксиданты', harmful: false },
   
   // Продукты-обманки (5 штук)
-  { name: 'Чипсы', emoji: '🥔', image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400', desc: 'Хрустящие, но лучше иногда — содержат много соли и жиров', harmful: true },
-  { name: 'Газировка', emoji: '🥤', image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400', desc: 'Освежает, но много сахара — есть более полезные напитки', harmful: true },
-  { name: 'Энергетик', emoji: '⚡', image: 'https://images.unsplash.com/photo-1610832059760-41b3e20359e1?w=400', desc: 'Даёт энергию, но лучше настоящий отдых и сон', harmful: true },
-  { name: 'Мармелад', emoji: '🍬', image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400', desc: 'Сладкий, но много красителей и сахара', harmful: true },
-  { name: 'Картошка-фри', emoji: '🍟', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400', desc: 'Вкусно, но жареное во фритюре — не лучший выбор', harmful: true }
+  { name: 'Чипсы', emoji: '🥔', image: 'snack.png', desc: 'Хрустящие, но лучше иногда — содержат много соли и жиров', harmful: true },
+  { name: 'Газировка', emoji: '🥤', image: 'soda.png', desc: 'Освежает, но много сахара — есть более полезные напитки', harmful: true },
+  { name: 'Энергетик', emoji: '⚡', image: 'energy.png', desc: 'Даёт энергию, но лучше настоящий отдых и сон', harmful: true },
+  { name: 'Мармелад', emoji: '🍬', image: 'jelly.png', desc: 'Сладкий, но много красителей и сахара', harmful: true },
+  { name: 'Картошка-фри', emoji: '🍟', image: 'chips.png', desc: 'Вкусно, но жареное во фритюре — не лучший выбор', harmful: true }
 ];
 
 let selectedItem = null;
@@ -579,13 +579,13 @@ function checkAnswers() {
   let resultClass = "result ";
 
   if (percentage <= 30) {
-    message = "🤔 Нутрициология для тебя какая-то шутка!?";
+    message = "🤔 Здоровое питание для тебя какая-то шутка!?";
     resultClass += "error";
   } else if (percentage <= 70) {
     message = "🙂 А ты неплохо разбираешься в еде!";
     resultClass += "warning";
   } else if (percentage <= 90) {
-    message = "🎓 Отлично, ещё немного и можно получить докторскую степень по нутрициологии!";
+    message = "🎓 Отлично, ещё немного и можно получить докторскую степень по здоровому питанию!";
     resultClass += "success";
   } else {
     message = "🏆 Шикарно! Чипсы будут в ужасе разбегаться при виде тебя!";
